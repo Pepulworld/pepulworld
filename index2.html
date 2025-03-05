@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Pepul Burned</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    
+    <link rel="shortcut icon" type="image/png" href="images/nav.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    
+    
+    
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="content">
+    <div class="logo"><a href="#">PEPUL</a></div>
+    <ul class="menu-list">
+      <div class="icon cancel-btn">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <li><a class="active" href="#burn" id="navhome">BURN!</a></li>
+      <li><a href="#">HOME</a></li>
+      <li><a href="#socials">SOCIALS</a></li>
+      <li><a href="#">COLLECT!</a></li>
+
+      
+    </ul>
+    <div class="icon menu-btn">
+      <i class="fa fa-bars" aria-hidden="true"></i>
+    </div>
+    </div>
+</nav>
+
+<script>
+  const navbar = document.querySelector(".navbar");
+  const menu = document.querySelector(".menu-list");
+  const menuBtn = document.querySelector(".menu-btn");
+  const cancelBtn = document.querySelector(".cancel-btn");
+  menuBtn.onclick = ()=>{
+    menu.classList.add("active");
+    menuBtn.classList.add("hide");
+  }
+  cancelBtn.onclick = ()=>{
+    menu.classList.remove("active");
+    menuBtn.classList.remove("hide");
+  }
+  window.onscroll = ()=>{
+    this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+  }
+</script>
+
+  <section id="home">
+    <div class="container">
+    <img src="images/Burn.png" id="logo1">
+    <img src="images/back.png" id="back">
+    <img src="images/mid.png" id="mid">
+    <img src="images/front.png" id="front">
+  </section>
+
+
+
+<!-----------About--------------->
+
+<section id="mainsection">
+  <section id="burn">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12">
+      
+      <h4 class="aboutus">BURN LINKS AND RECORDS</h4>
+    </div>
+  
+    
+    <div class="col-md-12">
+      <h1 class="aboutus1">PEPUL's initial aim is to help burn lots of PEPU tokens with the help of the community. To increase transparency, this page will provide all the buyback and burned transactions.</h1>
+      <h1 class="aboutus2"></h1>
+
+  
+        <h1 class="aboutus3"></h1>
+        <h4 class="aboutus4"></h4>
+        <div class="container">
+          <div class="row">
+        </div>
+    </div>
+    </div>
+
+    <div class="col-md-6">
+      <h4 class="aboutus">BUYBACKS</h4>
+      <h1 class="aboutus1">Total Buyback - $0.00 - 0.00PEPU</h1>
+      <h1 class="aboutus2"></h1>
+
+  
+        <h1 class="aboutus3"></h1>
+        <h4 class="aboutus4"></h4>
+        <div class="container">
+          <div class="row">
+          <div class="col-md-12">
+        <a href="#"><button class="howtobuybtn">BUYBACK #01 - COMING SOON</button></a></div>
+        </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+      <h4 class="aboutus">BURNS</h4>
+      <h1 class="aboutus1">Total Burned - $0.00 - 0.00PEPU</h1>
+      <h1 class="aboutus2"></h1>
+
+  
+        <h1 class="aboutus3"></h1>
+        <h4 class="aboutus4"></h4>
+        <div class="container">
+          <div class="row">
+          <div class="col-md-12">
+        <a href="#"><button class="howtobuybtn">BURN #01 - COMMING SOON</button></a></div>
+        </div>
+        </div>
+    </div>
+  
+  </div>
+  </div>
+  </section>
+
+
+
+
+ <!-----------social--------------->   
+ <section id="socials">
+  
+  <div class="container text-center">
+      
+      
+      <p class="calendartext">AS SEEN ON:</p>
+        <div class="calendar-icons2">
+          <div class="col-md-12">
+          <a href="https://x.com/pepulworld"><img src="images/SOCIAL-TWITTER-white2.png"></a>
+  
+          <a href="#"><img src="images/SOCIAL-OPENSEA2.png"></a>
+          <a href="#"><img src="images/etherscan-logo-circle.png"></a>
+  
+          <a href="https://nftcalendar.io/"><img src="images/NFTCALENDAR.webp"></a>
+          <a href="#"><img src="images/nftwatcher2.png"></a>
+          <a href="https://www.nestree.io/"><img src="images/nestree.png"></a>
+          </div>
+       
+      </div>
+    </div>
+    </section>
+<!-----------FOOTER--------------->   
+    <section id="arsbg">
+      <div class="container">
+      <div class="row">
+      <div class="col-md-12">
+        <h1 class="ars"> <img src="images/nav.png" class="navlogo">
+          名無し (Nanashi) © 2023. All rights reserved. </h1>
+</section>
+</section>
+
+<script src="smooth-scroll.js"></script>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script> 
+</body>
+
+</html>
