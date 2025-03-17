@@ -150,13 +150,62 @@
     <div class="col-md-12">
       
       <h4 class="aboutus">MINT AND COLLECT</h4>
+	    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        p {
+          text-align: center;
+          font-size: 30px;
+          margin-top: 0px;
+          color: azure;
+          font-family: 'Teko', sans-serif;
+        }
+        </style>
+        </head>
+        <body>
+        
+        <p id="demo"></p>
+        
+        <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Mon Mar 24, 2025 08:00:00 GMT+0000").getTime();
+        
+        // Update the count down every 1 second
+        var x = setInterval(function() {
+        
+          // Get today's date and time
+          var now = new Date().getTime();
+            
+          // Find the distance between now and the count down date
+          var distance = countDownDate - now;
+            
+          // Time calculations for days, hours, minutes and seconds
+          var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+          var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+          var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+          // Output the result in an element with id="demo"
+          document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+          + minutes + "m " + seconds + "s ";
+            
+          // If the count down is over, write some text 
+          if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "Minting is Live!";
+          }
+        }, 1000);
+        </script>
+        
+        </body>
     </div>
   
     
     <div class="col-md-6">
       <h1 class="aboutus1">Stage 1 - Creation of the NFT, contract, and developer tests.</h1>
-      <h1 class="aboutus2">Stage 2 - PUBLIC PRE-SALE for 0.0025ETH per mint and only 2,000 NFT supply.</h1>
-      <h1 class="aboutus2">Stage 3 - PUBLIC PRE-SALE for 0.0050ETH per mint and only 4,000 NFT supply.</h1>
+      <h1 class="aboutus2">Stage 2 - PUBLIC PRESALE for 0.0025ETH per mint and only 2,000 NFT supply.</h1>
+	<h1 class="aboutus3">Minting will be live on Monday, March 24, 2025, at 8:00A.M. (UTC).</h1>
+      <h1 class="aboutus2">Stage 3 - PUBLIC PRESALE for 0.0050ETH per mint and only 4,000 NFT supply.</h1>
       <h1 class="aboutus2">Stage 4 - PUBLIC SALE for 0.0075ETH per mint and the remaining 4,000 NFT supply will be sold.</h1>
   
         <h1 class="aboutus2">Stage 5 - REVEAL TIME! Reveal what your NFT/s looks like. Use it as PFP or Trade it on Opensea and other famouse NFT platforms.
