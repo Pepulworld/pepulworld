@@ -256,8 +256,8 @@ section #text span
     font-size: 15px;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    text-align: right;
-    margin-top: 30px;
+    text-align: justify;
+    margin-top: 0px;
     font-style: italic;
 }
 .aboutus4
